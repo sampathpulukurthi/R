@@ -6,7 +6,7 @@ install.packages(x)
 lapply(x, require, character.only = TRUE)
 
 ## Read the data
-setwd("C:/Users/haris/Desktop")
+
 marketing_train = read.csv("marketing_training.csv",header=T,na.strings=c(" ","","NA"))
 marketing_test = read.csv("marketing_test.csv",header=T,na.strings=c(" ","","NA"))
 marketing_test$X = NULL
